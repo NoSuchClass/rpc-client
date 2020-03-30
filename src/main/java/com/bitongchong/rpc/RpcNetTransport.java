@@ -1,4 +1,4 @@
-package org.example;
+package com.bitongchong.rpc;
 
 import com.bitongchong.rpc.RpcRequest;
 
@@ -22,7 +22,7 @@ public class RpcNetTransport {
     }
 
     public Object send(RpcRequest rpcRequest) throws IOException {
-        Socket socket = null;
+        Socket socket;
         Object result = null;
         ObjectInputStream inputStream = null;
         ObjectOutputStream outputStream = null;
